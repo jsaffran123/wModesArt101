@@ -1,21 +1,26 @@
 // index.js - purpose and description here
 // Author: Your Name
 // Date:
+// Define Transport Variables
 
-// Constants
+myTransport = [" Subaru Crosstrek", " Electric bike", " Walking", " Bus", " Rides from friends"]
 
-// Functions
+// Main Ride Object
+var myMainRide = {
+  make: "Subaru",
+  model: "Crosstrek",
+  color: "Black",
+  year: 2022,
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+  // Here is a function to calculate the age of the Main Ride,
+  // It uses the current year minus the year of the car (this.year)
+  age: function() {
+      return 2025 - this.year;
+      }
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+// Output
+document.writeln("The things I use to get around include:" + myTransport + "<br>");
 
-// let's get this party started
-main();
+document.writeln("Here is my main mode of transportation: <pre>", 
+  JSON.stringify(myMainRide, null, '\t'), "</pre>");
