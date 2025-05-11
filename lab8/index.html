@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 8 - Anon Functions and Callbacks</title>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" type="text/css" href="../css/site.css">
+  <link rel="stylesheet" type="text/css" href="css/lab.css">
+
+  <!-- Simple custom styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Lab-specific JavaScript -->
+  <script>
+    /*
+     * Author: Jonah Saffran-Johnson 
+     * Created May 11, 2025
+     * License Public Domain
+     */
+
+    // Define an array of numbers
+    let numbers = [2, 4, 6, 8, 10];
+
+    // Use map with an anonymous function to divide each number by 2
+    let halfNumbers = numbers.map(function(num) {
+        return num / 2;
+    });
+
+    // Output the result to the console
+    console.log("Original numbers:", numbers);
+    console.log("Half of each number:", halfNumbers);
+
+    // Display the results on the page
+    window.onload = function() {
+        let outputElement = document.getElementById("output");
+        outputElement.innerHTML = `
+            <h3>Results</h3>
+            <p><strong>Original numbers:</strong> ${numbers.join(", ")}</p>
+            <p><strong>Half of each number:</strong> ${halfNumbers.join(", ")}</p>
+        `;
+    }
+  </script>
+</head>
+<body>
+  <!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+  <main id="content">
+    <section>
+      <h1>Lab 8 - Anon Functions and Callbacks</h1>
+
+      <div class="minor-section">
+        <h2>Challenge</h2>
+        <p>The challenge of this lab was to experiment with anon functions and callbacks.</p>
+      </div>
+
+      <div class="minor-section">
+        <h2>Problems</h2>
+        <p>Fortunately I did not encounter any problems.</p>
+      </div>
+
+      <div class="minor-section">
+        <h2>Reflection</h2>
+        <p>I feel like I'm really sharpening my tools with JavaScript and CSS.</p>
+      </div>
+
+      <div class="minor-section">
+        <h2>Results</h2>
+        <p>Went really well!</p>
+        <div id="output"></div>
+      </div>
+    </section>
+
+    <nav id="links">
+      <!-- Put links to other pages (including the homepage) here. -->
+    </nav>
+  </main>
+</body>
+</html>
