@@ -1,0 +1,14 @@
+/* style.css */
+
+/* Styles for the toggle effects */
+.special {
+    background-color: yellow;
+}
+
+.highlight {
+    background-color: lightcoral;
+}
+
+.hidden {
+    display: none;
+}
